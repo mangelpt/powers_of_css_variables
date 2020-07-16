@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --base: #ffc600;
+  --spacing: 1rem;
+  --blur: 1rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #25545f;
+  text-align: center;
+}
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.js {
+  color: var(--base);
+}
+
+img {
+  box-shadow: 10px 10px 10px #0a1d22;
+  width: 40rem;
+  height: 40rem;
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+  margin-top: 4rem;
+  background-color: var(--base);
+}
+.controls {
+  margin: auto;
+  display: grid;
+  grid-gap: 1rem;
+  width: 20rem;
+  font-size: 1.5rem;
+}
